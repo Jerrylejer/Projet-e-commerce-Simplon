@@ -1,0 +1,174 @@
+/** GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background: #fff;
+}
+
+header,
+nav,
+section,
+footer {
+    width: min(100%, 100%);
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+ul li {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*? PROPRIETES BOX*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/*? MISE EN PLACE DES VARIABLES */
+:root {
+    --color-black: black;
+    --color-white: #fff;
+    --color-grey: #F5F5F5;
+}
+
+/*? HEADER */
+.header__logo {
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.header__logo {
+    min-height: 103px;
+}
+
+.header__navigation {
+    min-height: 80px;
+}
+
+.header__logo {
+    background: var(--color-black);
+}
+
+/* burger et navigation */
+.header__burger {
+    gap: 4px;
+    margin-left: 21px;
+}
+
+.header__icons-client {
+    min-width: 400px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.input__search {
+    gap: 15px;
+}
+*
+.input__search input {
+    border-radius: 15px;
+    height: 30px
+}
+
+.input__search input::placeholder {
+    padding-left: 15px;
+}
+
+.input__search img {
+    width: 17px;
+}
+
+.search {
+    min-width: 250px;
+}
+
+.icons__client {
+    width: 150px;
+    justify-content: space-between;
+    margin-right: 21px;
+}
+
+/** CLASS ANIMATIONS JS POUR LE BURGER QUI SE TRANSFORME EN CROIX*/
+
+/* barres hamburger en position normale */
+.visible {
+    opacity: 1;
+    transition: 3.5s;
+}
+
+.initial1 {
+    transform: translateY(0px) rotate(0deg);
+    transition: 1.5s;
+}
+
+.initial2 {
+    transform: translateY(0px) rotate(0deg);
+    transition: 1.5s;
+}
+
+/* mise en place de la croix */
+.opacity {
+    opacity: 0;
+    transition: 1.4s;
+}
+
+.rotate1 {
+    transform: translateY(10px) rotate(130deg);
+    transition: 1.5s;
+}
+
+.rotate2 {
+    transform: translateY(-10px) rotate(-130deg);
+    transition: 1.5s;
+}
+
+/*? Navigation */
+.nav__desktop {
+    justify-content: flex-start;
+    gap: 200px;
+    padding: 21px;
+    background: var(--color-grey);
+    position: relative;
+    top: 0px;
+}
+
+.nav__list {
+min-height: 275px;
+min-width: 150px;
+}
+
+/** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
+.open {
+    transition: 2s;
+    left: 0px;
+}
+
+.close {
+    transition: 3s;
+    left: -1950px;
+}
