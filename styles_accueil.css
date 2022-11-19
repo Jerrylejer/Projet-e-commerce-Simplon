@@ -88,6 +88,11 @@ button {
 .header__burger {
     gap: 4px;
     margin-left: 21px;
+    min-width: 20px;
+}
+
+.header__burger:hover {
+    cursor: pointer;
 }
 
 .header__icons-client {
@@ -102,6 +107,7 @@ button {
 * .input__search input {
     border-radius: 15px;
     height: 30px;
+    text-align: center;
 }
 
 .input__search input::placeholder {
@@ -116,7 +122,7 @@ button {
     min-width: 250px;
 }
 
-.icons__client {
+.icons__container {
     width: 150px;
     justify-content: space-between;
     margin-right: 21px;
@@ -173,11 +179,13 @@ button {
 }
 
 /** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
+/* Navigation apparait au clic */
 .open {
     transition: 2s;
     left: 0px;
 }
 
+/* Navigation cachée à gauche */
 .close {
     transition: 3s;
     left: -2880px;
@@ -207,12 +215,13 @@ button {
 }
 
 .decouverte__titre {
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: clamp(38px, 5vw, 48px);
     color: white;
+    margin-bottom: 0px;
 }
 
 .decouverte__paragraphe {
-    font-size: clamp(20px, 5vw, 30px);
+    font-size: clamp(15px, 5vw, 30px);
     margin: 100px 0;
     line-height: 1.5;
     color: white;
@@ -250,6 +259,14 @@ button {
     gap: 10px;
     padding: 15px 0px;
     font-size: large;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.univers__cards-titre:hover {
+    cursor: pointer;
+    transition: 1s;
+    border-bottom: 3px solid black;
 }
 
 /*? SECTIONS NOUVEAUTES */
@@ -304,6 +321,7 @@ button {
     width: min(759px, 80%);
     background: var(--color-grey);
     border: none;
+    text-align: center;
 }
 
 /*? FOOTER */
@@ -366,6 +384,10 @@ button {
         display: none;
     }
 
+    .decouverte__titre {
+        margin-bottom: 30px;
+    }
+
     .decouverte__message {
         align-items: center;
         margin: 25px;
@@ -398,5 +420,42 @@ button {
     .reseaux__container,
     .nav__footer {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .header__navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+        gap: 15px;
+    }
+
+    .header__burger {
+        margin-left: 0px;
+    }
+
+    .header__icons-client {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input__search img {
+        display: none;
+    }
+
+    .input__search input {
+        margin-left: 15px;
+    }
+    
+    .icons__client {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .icons__container a img {
+        padding: 5px;
     }
 }
