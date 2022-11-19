@@ -425,6 +425,10 @@ button {
 
 @media screen and (max-width: 570px) {
 
+    body {
+        max-height: 6000px;
+    }
+
     .header__navigation {
         flex-direction: column;
         height: auto;
@@ -433,6 +437,7 @@ button {
     }
 
     .header__burger {
+        margin-top: 10px;
         margin-left: 0px;
     }
 
@@ -455,7 +460,39 @@ button {
         margin-right: 0px;
     }
 
+    .icons__container {
+        margin-right: 0px;
+    }
+
     .icons__container a img {
         padding: 5px;
+    }
+
+    .nav__desktop {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .decouverte {
+        top: -1140px;
+        left: 0;
+    }
+
+    .univers {
+        top: -1100px;
+    }
+
+    .nouveautes {
+        top: -1000px;
+    }
+
+    .newsletter {
+        position: relative;
+        top: -1000px;
+    }
+
+    .footer {
+        position: relative;
+        top: -1100px;
     }
 }
