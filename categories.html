@@ -6,43 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+<link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles_categories.css" />
         <title>Projet e-commerce Simplon</title>
     </head>
     <body>
-        <!-- Header version desktop -->
         <header>
             <!-- Logo -->
             <div class="header__logo flex">
-                <h1 class="header__title">LOGO</h1>
+                <img src="/assets/icônes/logo_marque.png" alt="logo marque" />
             </div>
             <!-- Barre de menu -->
             <div class="header__navigation flex">
+                <!-- Burger pour partie de gauche-->
                 <div class="header__burger flex column" id="burger">
-                    <img
-                        src="/assets/icônes/hamburger_up.png"
-                        alt="hamburger"
-                        id="barre_1"
-                        class="initial1"
-                    />
-                    <img
-                        src="/assets/icônes/hamburger_center.png"
-                        alt="hamburger"
-                        id="barre_2"
-                        class="visible"
-                    />
-                    <img
-                        src="/assets/icônes/hamburger_down.png"
-                        alt="hamburger"
-                        id="barre_3"
-                        class="initial2"
-                    />
+                    <span class="barre__hamburger initial1" id="barre_1"></span>
+                    <span class="barre__hamburger visible" id="barre_2"></span>
+                    <span class="barre__hamburger initial2" id="barre_3"></span>
                 </div>
+                <!-- Partie de droite avec Search et 3 icônes -->
                 <div class="header__icons-client flex">
+                    <!-- Barre Search -->
                     <div class="input__search flex">
                         <img src="/assets/icônes/loupe.png" alt="loupe input" />
                         <input
@@ -52,6 +39,7 @@
                             placeholder="Search"
                         />
                     </div>
+                    <!-- Icônes d'action client -->
                     <div class="icons__client flex">
                         <div class="icons__container flex">
                             <a href="#"
@@ -73,8 +61,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Header -->
         </header>
-        <!-- Navigation desktop cachée par défaut-->
+        <!-- Navigation desktop en ligne puis à 992px navigation mobile en colonne-->
         <nav class="nav__desktop flex close" id="nav">
             <div class="articles-du-moment nav__list">
                 <h2><a href="#">Articles du moment</a></h2>
@@ -109,6 +98,15 @@
                 <ul class="nav__accessoires">
                     <li><a href="#">Accessoires Tech</a></li>
                     <li><a href="#">Accessoires fashion</a></li>
+                </ul>
+            </div>
+            <div class="digitalized nav__list">
+                <h2>
+                    <a href="#">Digitalized<span>Styl</span></a>
+                </h2>
+                <ul class="nav__digitalized">
+                    <li><a href="#">Adresse</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -164,7 +162,7 @@
                         </div>
                         <div class="categorie__accessoires flex column">
                             <img
-                                src="/assets/photos/categories__droite-bas.png"
+                                src="/assets/photos/categories__bas-droite.png"
                                 alt="hommes"
                             />
                             <div class="categories__titres flex">
@@ -179,15 +177,36 @@
                     </div>
                 </div>
             </section>
-            <section class="meilleures-ventes">
-                <div class="meilleures-ventes__container">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+            <section class="nouveautes">
+                <h2 class="titres__sections">Nouveautés</h2>
+                <!-- Caroussel en attente de Javascript => prevoir 8 photos qui défilent -->
+                <div class="container flex column">
+                    <div class="nouveautes__container flex">
+                        <div class="nouveautes__items">
+                            <img
+                                src="/assets/photos/carrousel1.png"
+                                alt="mode1"
+                            />
+                        </div>
+                        <div class="nouveautes__items">
+                            <img
+                                src="/assets/photos/carrousel2.png"
+                                alt="mode2"
+                            />
+                        </div>
+                        <div class="nouveautes__items">
+                            <img
+                                src="/assets/photos/carrousel3.png"
+                                alt="mode3"
+                            />
+                        </div>
+                        <div class="nouveautes__items">
+                            <img
+                                src="/assets/photos/carrousel4.png"
+                                alt="mode4"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="newsletter flex column">
@@ -207,7 +226,9 @@
             </section>
         </main>
         <footer class="footer flex column">
-            <h2>LOGO</h2>
+            <div class="logo">
+                <img src="/assets/icônes/logo_marque.png" alt="logo marque" />
+            </div>
             <div class="reseaux__container flex">
                 <a href="#"
                     ><img
@@ -235,12 +256,12 @@
                 /></a>
                 <a href="#"
                     ><img
-                        src="/assets/icônes/youtube.png"
+                        src="/assets/icônes/Youtube_white.png"
                         alt="youtube"
                         class="reseaux__items"
                 /></a>
             </div>
-            <p>@2022 NOTRE MARQUE S.A.S.</p>
+            <p>@Digitalized<span>Styl</span> S.A.S.</p>
             <nav class="nav__footer flex">
                 <a href="" class="nav__footer-items">contact</a>
                 <a href="" class="nav__footer-items">carrières</a>
