@@ -1,0 +1,517 @@
+/** GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: min(100%, 100%);
+    display: block;
+}
+
+body {
+    background: #fff;
+}
+
+header,
+section,
+footer {
+    width: min(100%, 100%);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+ul li {
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 30px 80px;
+    border: 7px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+.polygons {
+    width: 10px;
+}
+
+/*? PROPRIETES BOX*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/*? MISE EN PLACE DES VARIABLES */
+:root {
+    --color-black: black;
+    --color-darkGray: #7a7070;
+    --color-white: #fff;
+    --color-grey: #f5f5f5;
+    --color-purple: #7e2bbb;
+}
+
+/*? HEADER */
+.header__logo {
+    justify-content: center;
+    background: var(--color-black);
+    min-height: 103px;
+}
+
+.header__logo img {
+    width: 118px;
+    margin: 10px 0;
+}
+
+.header__navigation {
+    min-height: 80px;
+}
+
+/* burger et navigation */
+
+.header__burger {
+    gap: 3px;
+    margin-left: 21px;
+    min-width: 20px;
+}
+
+.barre__hamburger {
+    width: 50px;
+    height: 7px;
+    background-color: var(--color-purple);
+    border-radius: 5px;
+}
+
+.header__burger:hover {
+    cursor: pointer;
+}
+
+.header__icons-client {
+    min-width: 400px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.input__search {
+    gap: 15px;
+}
+
+.input__search input {
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+}
+
+.input__search input::placeholder {
+    padding-left: 15px;
+}
+
+.input__search img {
+    width: 17px;
+}
+
+.search {
+    min-width: 250px;
+}
+
+.icons__container {
+    width: 150px;
+    justify-content: space-between;
+    margin-right: 21px;
+}
+
+/** CLASS ANIMATIONS JS POUR LE BURGER QUI SE TRANSFORME EN CROIX*/
+
+/* barres hamburger en position normale */
+.visible {
+    opacity: 1;
+    transition: 3.5s;
+}
+
+.initial1 {
+    transform: translateY(0px) rotate(0deg);
+    transition: 1.5s;
+}
+
+.initial2 {
+    transform: translateY(0px) rotate(0deg);
+    transition: 1.5s;
+}
+
+/* mise en place de la croix */
+.opacity {
+    opacity: 0;
+    transition: 1.4s;
+}
+
+.rotate1 {
+    transform: translateY(10px) rotate(130deg);
+    transition: 1.5s;
+}
+
+.rotate2 {
+    transform: translateY(-10px) rotate(-130deg);
+    transition: 1.5s;
+}
+
+/*? NAVIGATION */
+.nav__desktop {
+    justify-content: space-around;
+    padding: 21px;
+    background: var(--color-white);
+    opacity: 0.9;
+    width: min(100%, 100%);
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+
+.nav__list {
+    min-height: 275px;
+    min-width: 150px;
+}
+
+.digitalized span {
+    font-size:medium;
+}
+
+/** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
+/* Navigation apparait au clic */
+.open {
+    transition: 2s;
+    left: 0px;
+}
+
+/* Navigation cachée à gauche */
+.close {
+    transition: 3s;
+    left: -2880px;
+}
+
+/*? SECTION DECOUVERTE */
+.decouverte {
+    height: 100vh;
+    width: min(100%, 90%);
+    position: relative;
+    top: -280px;
+    margin: 0 auto;
+}
+
+.decouverte__container {
+    justify-content: center;
+}
+
+.decouverte__image-accueil img {
+    width: min();
+}
+
+.image__responsive {
+    display: none;
+}
+
+.decouverte__colonne-gauche,
+.decouverte__colonne-droite {
+    height: 856px;
+    width: 152px;
+    background: url(/assets/photos/background_colonnes.png);
+}
+
+/*? SECTION UNIVERS */
+.univers {
+    height: auto;
+    position: relative;
+    top: -250px;
+    padding: 21px;
+}
+
+.univers h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.univers__card-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* gap quand le wrap se met en action */
+    gap: 35px;
+}
+
+.univers__cards {
+    width: max(410px);
+    height: auto;
+    align-items: flex-start;
+}
+
+.univers__cards-titre {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0px;
+    font-size: large;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.univers__cards-titre:hover {
+    cursor: pointer;
+    transition: 1s;
+    border-bottom: 3px solid black;
+}
+
+/*? SECTIONS NOUVEAUTES */
+.nouveautes {
+    height: auto;
+    position: relative;
+    top: -150px;
+}
+
+.nouveautes h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    padding-left: 21px;
+}
+
+.nouveautes__container {
+    height: max(462px, 100%);
+    width: min(100%, 100%);
+    background: var(--color-purple);
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+/*? NEWSLETTER */
+.newsletter {
+    position: relative;
+    top: -100px;
+    height: auto;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.newsletter h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    padding-left: 21px;
+    text-align: center;
+    margin-top: 91px;
+}
+
+.input__newsletter {
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input__newsletter input {
+    height: 50px;
+    width: min(759px, 80%);
+    background: var(--color-grey);
+    border: none;
+    text-align: center;
+}
+
+/*? FOOTER */
+.footer {
+    height: 400px;
+    background: var(--color-black);
+    color: var(--color-white);
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top: 60px;
+}
+
+.reseaux__container {
+    margin-top: 20px;
+    justify-content: space-around;
+    width: min(20%, 80%);
+}
+
+.footer p {
+    color: var(--color-white);
+    font-size:x-large;
+    margin: 40px 0px;
+}
+
+.footer p span {
+    color: var(--color-white);
+    font-size: medium;
+}
+
+.nav__footer {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: min(60%, 80%);
+    margin-bottom: 30px;
+}
+
+.nav__footer a {
+    color: var(--color-white);
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
+    line-height: 2rem;
+}
+
+
+/*? MEDIAQUERIES */
+
+@media screen and (max-width: 1800px) {
+    .univers {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .decouverte__colonne-droite,
+    .decouverte__colonne-gauche {
+        display: none;
+    }
+
+    .univers {
+        margin-top: -180px;
+
+    }
+    .nouveautes {
+        margin-top: -50px;
+    }
+
+    .nouveautes__container {
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .nav__desktop {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .decouverte {
+        margin-top: -1120px;
+    }
+    
+    .titres__sections {
+        text-align: center;
+    }
+
+    .decouverte__image-accueil > img {
+        display: none;
+    }
+    
+    .decouverte__image-accueil :nth-child(2) {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .univers {
+        margin-top: -50px;
+    }
+
+    .nouveautes {
+        align-items: center;
+    }
+
+    .nouveautes__container {
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .univers {
+        margin-top: -300px;
+    }
+
+    .univers__card {
+        align-items: center;
+    }
+
+    .univers__cards-titre {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer {
+        height: auto;
+    }
+    
+    .reseaux__container,
+    .nav__footer {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    .header__navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+        gap: 15px;
+    }
+    
+    .header__burger {
+        margin: 30px 0px;
+    }
+
+    .header__icons-client {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input__search img {
+        display: none;
+    }
+
+    .input__search input {
+        margin-left: 15px;
+    }
+
+    .icons__client {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .icons__container {
+        margin-right: 0px;
+    }
+
+    .icons__container a img {
+        padding: 5px;
+    }
+
+    .decouverte {
+        margin-top: -1080px;
+    }
+
+    .univers {
+        margin-top: -400px;
+    }
+}
