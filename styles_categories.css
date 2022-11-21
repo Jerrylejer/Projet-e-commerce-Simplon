@@ -171,7 +171,7 @@ button {
 .nav__desktop {
     justify-content: space-around;
     padding: 21px;
-    background: var(--color-grey);
+    background: var(--color-black);
     width: min(100%, 100%);
     position: relative;
     top: 0px;
@@ -181,6 +181,10 @@ button {
 .nav__list {
     min-height: 275px;
     min-width: 150px;
+}
+
+.nav__list a {
+    color: var(--color-white);
 }
 
 /** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
