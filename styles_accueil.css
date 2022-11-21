@@ -200,6 +200,10 @@ button {
     background: black;
 }
 
+.decouverte__container img {
+    max-width: 50%;
+}
+
 .decouverte__container button {
     background-color: black;
     color: white;
@@ -232,6 +236,7 @@ button {
     height: auto;
     position: relative;
     top: -200px;
+    margin-top: -200px;
     padding: 21px;
 }
 
@@ -274,6 +279,7 @@ button {
     height: auto;
     position: relative;
     top: -50px;
+    margin-top: -50px;
 }
 
 .nouveautes h2 {
@@ -362,13 +368,32 @@ button {
 
 /*? MEDIAQUERIES */
 
+
+
+@media screen and (max-width: 1800px) {
+
+    .univers {
+        margin-top: -50px;
+    }
+}
+
 @media screen and (max-width: 1250px) {
+
+    .univers {
+        margin-top: -50px;
+    }
+
     .nouveautes__container {
         padding: 0 15px;
     }
 }
 
 @media screen and (max-width: 992px) {
+
+    .univers {
+        margin-top: -50px;
+    }
+
     .nouveautes {
         align-items: center;
     }
@@ -404,6 +429,10 @@ button {
         text-align: center;
     }
 
+    .univers {
+        margin-top: -50px;
+    }
+
     .univers__card {
         align-items: center;
     }
@@ -424,11 +453,6 @@ button {
 }
 
 @media screen and (max-width: 570px) {
-
-    body {
-        max-height: 6000px;
-    }
-
     .header__navigation {
         flex-direction: column;
         height: auto;
@@ -453,7 +477,7 @@ button {
     .input__search input {
         margin-left: 15px;
     }
-    
+
     .icons__client {
         justify-content: center;
         align-items: center;
@@ -474,25 +498,22 @@ button {
     }
 
     .decouverte {
-        top: -1140px;
-        left: 0;
+        margin-top: -820px;
     }
 
     .univers {
-        top: -1100px;
+        margin-top: -50px;
     }
 
     .nouveautes {
-        top: -1000px;
+        margin-top: -90px;
     }
 
     .newsletter {
-        position: relative;
-        top: -1000px;
+        margin-top: -50px;
     }
 
     .footer {
         position: relative;
-        top: -1100px;
     }
 }
