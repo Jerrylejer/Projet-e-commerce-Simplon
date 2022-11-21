@@ -9,6 +9,11 @@
     list-style: none;
 }
 
+main {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
 img {
     width: min(100%, 100%);
     display: block;
@@ -104,8 +109,7 @@ button {
 .input__search {
     gap: 15px;
 }
-
-.input__search input {
+* .input__search input {
     border-radius: 15px;
     height: 30px;
     text-align: center;
@@ -192,112 +196,72 @@ button {
     left: -2880px;
 }
 
-/*? SECTION DECOUVERTE */
-.decouverte {
-    height: auto;
+/*? CATEGORIES */
+
+.categories {
     position: relative;
-    top: -320px;
-    left: 0;
-    background: black;
+    top: -270px;
 }
 
-.decouverte__container img {
-    max-width: 50%;
-}
-
-.decouverte__container button {
-    background-color: black;
-    color: white;
-    font-weight: bolder;
-}
-
-.decouverte__message {
-    width: min(100%, 100%);
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    align-items: flex-end;
-}
-
-.decouverte__titre {
-    font-size: clamp(38px, 5vw, 48px);
-    color: white;
-    margin-bottom: 0px;
-}
-
-.decouverte__paragraphe {
-    font-size: clamp(15px, 5vw, 30px);
-    margin: 100px 0;
-    line-height: 1.5;
-    color: white;
-}
-
-/*? SECTION UNIVERS */
-.univers {
-    height: auto;
-    position: relative;
-    top: -200px;
-    padding: 21px;
-}
-
-.univers h2 {
+.categories h2 {
     font-size: 3rem;
     margin-bottom: 4rem;
+    font-size: clamp(38px, 5vw, 48px);
 }
 
-.univers__card-container {
-    justify-content: space-around;
+.categories__container {
+    justify-content: center;
+    gap: 209px;
     flex-wrap: wrap;
-    /* gap quand le wrap se met en action */
-    gap: 35px;
 }
 
-.univers__cards {
-    width: 587px;
-    height: auto;
-    align-items: flex-start;
-}
-
-.univers__cards-titre {
+.categories__titres {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding: 15px 0px;
-    font-size: large;
+    font-size:larger;
     padding-bottom: 10px;
-    border-bottom: 3px solid white;
+    border-bottom: 10px solid white;
 }
 
-.univers__cards-titre:hover {
+.categories__titres:hover {
     cursor: pointer;
     transition: 1s;
-    border-bottom: 3px solid black;
+    border-bottom: 10px solid rgb(251, 2, 226);
+    width: 50%;
 }
 
-/*? SECTIONS NOUVEAUTES */
-.nouveautes {
-    height: auto;
-    position: relative;
-    top: -50px;
+.categories__moment > img {
+    max-width: 500px;
 }
 
-.nouveautes h2 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-    padding-left: 21px;
+.categories__autres {
+    gap: 100px;
+    height: 100%;
+    justify-content: space-between;
 }
 
-.nouveautes__container {
-    width: min(100%, 100%);
-    background: var(--color-darkGray);
-    justify-content: space-around;
-    gap: 180px;
-    padding: 40px 0px;
+.categories__sexes {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
-.nouveautes__items {
-    width: 180px;
-    height: auto;
+.categorie__hommes > img {
+    max-width: 300px;
+}
+
+.categorie__femmes > img {
+    max-width: 380px;
+}
+
+.categorie__accessoires > img {
+    max-width: 300px;
+}
+
+.categorie__accessoires {
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 /*? NEWSLETTER */
@@ -308,7 +272,7 @@ button {
 }
 
 .newsletter h2 {
-    font-size: 3rem;
+    font-size: clamp(38px, 5vw, 48px);
     margin-bottom: 4rem;
     padding-left: 21px;
     text-align: center;
@@ -365,81 +329,10 @@ button {
     line-height: 2rem;
 }
 
+
 /*? MEDIAQUERIES */
 
-
-
-@media screen and (max-width: 1800px) {
-
-    .univers {
-        margin-top: -50px;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-
-    .univers {
-        margin-top: -50px;
-    }
-
-    .nouveautes__container {
-        padding: 0 15px;
-    }
-}
-
 @media screen and (max-width: 992px) {
-
-    .univers {
-        margin-top: -50px;
-    }
-
-    .nouveautes {
-        align-items: center;
-    }
-    .nouveautes__container {
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .decouverte__container img {
-        display: none;
-    }
-
-    .decouverte__titre {
-        margin-bottom: 30px;
-    }
-
-    .decouverte__message {
-        align-items: center;
-        margin: 25px;
-    }
-
-    .decouverte__paragraphe {
-        align-items: center;
-        text-align: justify;
-        margin-top: 0px;
-        margin-bottom: 45px;
-    }
-
-    .titres__sections {
-        text-align: center;
-    }
-
-    .univers {
-        margin-top: -50px;
-    }
-
-    .univers__card {
-        align-items: center;
-    }
-
-    .univers__cards-titre {
-        width: 100%;
-        justify-content: center;
-    }
 
     .footer {
         height: auto;
@@ -451,7 +344,7 @@ button {
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 768px) {
     .header__navigation {
         flex-direction: column;
         height: auto;
@@ -496,23 +389,53 @@ button {
         text-align: center;
     }
 
-    .decouverte {
-        margin-top: -820px;
+    .categories h2 {
+        text-align: center;
     }
 
-    .univers {
-        margin-top: -50px;
+    .categories {
+        margin-top: -850px;
     }
 
-    .nouveautes {
-        margin-top: -90px;
+    .categories__container {
+        gap: 80px;
+    }
+
+    .categories__autres {
+        gap: 80px;
+    }
+
+    .categories__titres {
+        justify-content: center;
+    }
+
+    .categorie__hommes > img {
+        margin: 0px;
+    }
+    
+    .categorie__femmes > img {
+        margin: 0px;
+    }
+    
+    .categorie__accessoires {
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .accessoires {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .categories__titres:hover {
+        cursor: pointer;
+        transition: 1s;
+        border-bottom: 10px solid rgb(251, 2, 226);
+        width: 100%;
     }
 
     .newsletter {
-        margin-top: -50px;
+        margin-top: -250px;
     }
 
-    .footer {
-        position: relative;
-    }
 }
