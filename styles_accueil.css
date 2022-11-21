@@ -70,14 +70,19 @@ button {
     --color-darkGray: #7a7070;
     --color-white: #fff;
     --color-grey: #f5f5f5;
+    --color-purple: #7e2bbb;
 }
 
 /*? HEADER */
 .header__logo {
     justify-content: center;
-    color: var(--color-white);
     background: var(--color-black);
     min-height: 103px;
+}
+
+.header__logo img {
+    width: 118px;
+    margin: 10px 0;
 }
 
 .header__navigation {
@@ -85,10 +90,18 @@ button {
 }
 
 /* burger et navigation */
+
 .header__burger {
     gap: 4px;
     margin-left: 21px;
     min-width: 20px;
+}
+
+.barre__hamburger {
+    width: 52px;
+    height: 7px;
+    background-color: var(--color-purple);
+    border-radius: 5px;
 }
 
 .header__burger:hover {
@@ -104,7 +117,8 @@ button {
 .input__search {
     gap: 15px;
 }
-* .input__search input {
+
+.input__search input {
     border-radius: 15px;
     height: 30px;
     text-align: center;
@@ -166,7 +180,8 @@ button {
 .nav__desktop {
     justify-content: space-around;
     padding: 21px;
-    background: var(--color-grey);
+    background: var(--color-white);
+    opacity: 0.9;
     width: min(100%, 100%);
     position: relative;
     top: 0px;
@@ -193,30 +208,58 @@ button {
 
 /*? SECTION DECOUVERTE */
 .decouverte {
-    height: auto;
+    height: 100vh;
+    width: min(100%, 90%);
+    position: relative;
+    /* Etait -320px */
+    top: -320px;
+    margin: 0 auto;
+}
+
+.decouverte__container {
+    justify-content: center;
+}
+
+.decouverte__image-accueil img {
+    width: min();
+}
+
+.image__responsive {
+    display: none;
+}
+
+.decouverte__colonne-gauche,
+.decouverte__colonne-droite {
+    height: 856px;
+    width: 152px;
+    background: url(/assets/photos/background_colonnes.png);
+}
+
+/* .decouverte {
+    height: auto; 
     position: relative;
     top: -320px;
     left: 0;
     background: black;
-}
+} */
 
-.decouverte__container img {
+/* .decouverte__container img {
     max-width: 50%;
-}
+} */
 
-.decouverte__container button {
+/* .decouverte__container button {
     background-color: black;
     color: white;
     font-weight: bolder;
-}
+} */
 
-.decouverte__message {
+/* .decouverte__message {
     width: min(100%, 100%);
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     align-items: flex-end;
-}
+} */
 
 .decouverte__titre {
     font-size: clamp(38px, 5vw, 48px);
@@ -224,19 +267,18 @@ button {
     margin-bottom: 0px;
 }
 
-.decouverte__paragraphe {
+/* .decouverte__paragraphe {
     font-size: clamp(15px, 5vw, 30px);
     margin: 100px 0;
     line-height: 1.5;
     color: white;
-}
+} */
 
 /*? SECTION UNIVERS */
 .univers {
     height: auto;
     position: relative;
-    top: -200px;
-    margin-top: -200px;
+    top: -250px;
     padding: 21px;
 }
 
@@ -253,7 +295,7 @@ button {
 }
 
 .univers__cards {
-    width: 587px;
+    width: max(410px);
     height: auto;
     align-items: flex-start;
 }
@@ -278,8 +320,7 @@ button {
 .nouveautes {
     height: auto;
     position: relative;
-    top: -50px;
-    margin-top: -50px;
+    top: -150px;
 }
 
 .nouveautes h2 {
@@ -289,23 +330,21 @@ button {
 }
 
 .nouveautes__container {
+    height: max(462px, 100%);
     width: min(100%, 100%);
-    background: var(--color-darkGray);
+    background: var(--color-purple);
     justify-content: space-around;
-    gap: 180px;
+    gap: 20px;
     padding: 40px 0px;
-}
-
-.nouveautes__items {
-    width: 180px;
-    height: auto;
 }
 
 /*? NEWSLETTER */
 .newsletter {
+    position: relative;
+    top: -100px;
     height: auto;
     align-items: center;
-    margin-bottom: 154px;
+    margin-bottom: 100px;
 }
 
 .newsletter h2 {
@@ -368,10 +407,7 @@ button {
 
 /*? MEDIAQUERIES */
 
-
-
 @media screen and (max-width: 1800px) {
-
     .univers {
         margin-top: -50px;
     }
@@ -379,16 +415,38 @@ button {
 
 @media screen and (max-width: 1250px) {
 
+    .decouverte__colonne-droite,
+    .decouverte__colonne-gauche {
+        display: none;
+    }
+
     .univers {
+        margin-top: -180px;
+
+    }
+    .nouveautes {
         margin-top: -50px;
     }
 
     .nouveautes__container {
-        padding: 0 15px;
+        padding: 40px 40px;
     }
 }
 
 @media screen and (max-width: 992px) {
+
+    .titres__sections {
+        text-align: center;
+    }
+
+    .decouverte__image-accueil > img {
+        display: none;
+    }
+    
+    .decouverte__image-accueil :nth-child(2) {
+        display: block;
+        margin-top: 30px;
+    }
 
     .univers {
         margin-top: -50px;
@@ -397,6 +455,7 @@ button {
     .nouveautes {
         align-items: center;
     }
+
     .nouveautes__container {
         flex-direction: column;
         align-items: center;
@@ -405,17 +464,9 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-    .decouverte__container img {
-        display: none;
-    }
 
     .decouverte__titre {
         margin-bottom: 30px;
-    }
-
-    .decouverte__message {
-        align-items: center;
-        margin: 25px;
     }
 
     .decouverte__paragraphe {
@@ -425,12 +476,13 @@ button {
         margin-bottom: 45px;
     }
 
-    .titres__sections {
-        text-align: center;
+    .decouverte__message {
+        align-items: center;
+        margin: 25px;
     }
 
     .univers {
-        margin-top: -50px;
+        margin-top: -150px;
     }
 
     .univers__card {
@@ -461,8 +513,7 @@ button {
     }
 
     .header__burger {
-        margin-top: 10px;
-        margin-left: 0px;
+        margin: 30px 0px;
     }
 
     .header__icons-client {
@@ -502,18 +553,8 @@ button {
     }
 
     .univers {
-        margin-top: -50px;
+        margin-top: -300px;
     }
 
-    .nouveautes {
-        margin-top: -90px;
-    }
 
-    .newsletter {
-        margin-top: -50px;
-    }
-
-    .footer {
-        position: relative;
-    }
 }
