@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles_accueil.css" />
@@ -18,16 +18,19 @@
         <header>
             <!-- Logo -->
             <div class="header__logo flex">
-                    <img src="/assets/icônes/logo_marque.png" alt="logo marque">
+                <img src="/assets/icônes/logo_marque.png" alt="logo marque" />
             </div>
             <!-- Barre de menu -->
             <div class="header__navigation flex">
+                <!-- Burger pour partie de gauche-->
                 <div class="header__burger flex column" id="burger">
-                        <span class="barre__hamburger initial1" id="barre_1"></span>
-                        <span class="barre__hamburger visible" id="barre_2"></span>
-                        <span class="barre__hamburger initial2" id="barre_3"></span>
+                    <span class="barre__hamburger initial1" id="barre_1"></span>
+                    <span class="barre__hamburger visible" id="barre_2"></span>
+                    <span class="barre__hamburger initial2" id="barre_3"></span>
                 </div>
+                <!-- Partie de droite avec Search et 3 icônes -->
                 <div class="header__icons-client flex">
+                    <!-- Barre Search -->
                     <div class="input__search flex">
                         <img src="/assets/icônes/loupe.png" alt="loupe input" />
                         <input
@@ -37,6 +40,7 @@
                             placeholder="Search"
                         />
                     </div>
+                    <!-- Icônes d'action client -->
                     <div class="icons__client flex">
                         <div class="icons__container flex">
                             <a href="#"
@@ -58,8 +62,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Header -->
         </header>
-        <!-- Navigation desktop cachée par défaut-->
+        <!-- Navigation desktop en ligne puis à 992px navigation mobile en colonne-->
         <nav class="nav__desktop flex close" id="nav">
             <div class="articles-du-moment nav__list">
                 <h2><a href="#">Articles du moment</a></h2>
@@ -96,66 +101,39 @@
                     <li><a href="#">Accessoires fashion</a></li>
                 </ul>
             </div>
+            <div class="digitalized nav__list">
+                <h2>
+                    <a href="#">Digitalized<span>Styl</span></a>
+                </h2>
+                <ul class="nav__digitalized">
+                    <li><a href="#">Adresse</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- main -->
         <main class="main">
             <!-- <section class="decouverte">
                 <div class="decouverte__container flex">
-                    <!-- <div class="decouverte__message flex column">
-                        <h2 class="decouverte__titre">
-                            L'élègance Tech à son univers
-                        </h2>
-                        <p class="decouverte__paragraphe">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Beatae similique quos debitis saepe est ullam
-                            adipisci molestias repellendus quod corporis,
-                            placeat delectus, reprehenderit et. Enim quos ullam
-                            neque non. Vitae voluptate, modi quas saepe aperiam
-                            nostrum non, velit ex itaque nemo perferendis quod
-                            nobis molestiae explicabo voluptas, consequatur
-                            sapiente officia!
-                        </p>
-                        <button type="submit">Je découvre</button>
-                    </div> -->
-                        <div class="decouverte__colonne-gauche">
-                            <span class="colonne-violette"></span>
-                        </div>
-                        <div class="decouverte__image-accueil">
-                            <img
+                    <div class="decouverte__colonne-gauche">
+                        <span class="colonne-violette"></span>
+                    </div>
+                    <div class="decouverte__image-accueil">
+                        <img
                             src="/assets/photos/accueil_violet.png"
                             alt="image accueil"
-                            />
-                            <img src="/assets/photos/accueil_responsive.png" alt="image accueil responsive" class="image__responsive">
-                        </div>
-                        <div class="decouverte__colonne-droite">
-                            <span class="colonne-violette"></span>
-                        </div>
+                        />
+                        <img
+                            src="/assets/photos/accueil_responsive.png"
+                            alt="image accueil responsive"
+                            class="image__responsive"
+                        />
+                    </div>
+                    <div class="decouverte__colonne-droite">
+                        <span class="colonne-violette"></span>
+                    </div>
                 </div>
             </section>
-            <!-- <section class="decouverte">
-                <div class="decouverte__container flex">
-                    <div class="decouverte__message flex column">
-                        <h2 class="decouverte__titre">
-                            L'élègance Tech à son univers
-                        </h2>
-                        <p class="decouverte__paragraphe">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Beatae similique quos debitis saepe est ullam
-                            adipisci molestias repellendus quod corporis,
-                            placeat delectus, reprehenderit et. Enim quos ullam
-                            neque non. Vitae voluptate, modi quas saepe aperiam
-                            nostrum non, velit ex itaque nemo perferendis quod
-                            nobis molestiae explicabo voluptas, consequatur
-                            sapiente officia!
-                        </p>
-                        <button type="submit">Je découvre</button>
-                    </div>
-                    <img
-                        src="/assets/photos/engin-akyurt-5-sFLqq5dV0-unsplash 1 (1).png"
-                        alt="Image accueil"
-                    />
-                </div>
-            </section> -->
             <section class="univers">
                 <h2 class="titres__sections">L'univers</h2>
                 <div class="univers__card-container flex">
@@ -238,18 +216,17 @@
                                 alt="mode4"
                             />
                         </div>
-                        <!-- <div class="nouveautes__items"></div>
-                        <div class="nouveautes__items"></div>
-                        <div class="nouveautes__items"></div>
-                        <div class="nouveautes__items"></div>
-                        <div class="nouveautes__items"></div> -->
                     </div>
                 </div>
             </section>
             <section class="newsletter flex column">
                 <h2>S'inscrire à la newsletter</h2>
                 <div class="input__newsletter flex">
-                    <input type="email" name="email" placeholder="Je désire recevoir la newsletter, j'indique mon email"/>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Je désire recevoir la newsletter, j'indique mon email"
+                    />
                     <img
                         class="polygons"
                         src="/assets/icônes/polygons.png"
@@ -259,7 +236,9 @@
             </section>
         </main>
         <footer class="footer flex column">
-            <h2>LOGO</h2>
+            <div class="logo">
+                <img src="/assets/icônes/logo_marque.png" alt="logo marque" />
+            </div>
             <div class="reseaux__container flex">
                 <a href="#"
                     ><img
@@ -292,7 +271,7 @@
                         class="reseaux__items"
                 /></a>
             </div>
-            <p>@2022 NOTRE MARQUE S.A.S.</p>
+            <p>@Digitalized<span>Styl</span> S.A.S.</p>
             <nav class="nav__footer flex">
                 <a href="" class="nav__footer-items">contact</a>
                 <a href="" class="nav__footer-items">carrières</a>
