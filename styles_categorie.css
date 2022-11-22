@@ -251,6 +251,10 @@ button {
     width: 50%;
 }
 
+.extra:hover {
+    width: 70%;
+}
+
 .categories__femmes-tous > img {
     max-width: 500px;
 }
@@ -502,26 +506,29 @@ button {
         gap: 80px;
     }
 
-    .categories__titres {
-        justify-content: center;
-    }
-
+    
     .categorie__hauts > img {
         margin: 0px;
     }
-
+    
     .categorie__combinaisons > img {
         margin: 0px;
     }
-
+    
     .categorie__accessoires {
         margin: 0px;
         justify-content: center;
     }
-
+    
     .accessoires {
         width: 100%;
         justify-content: center;
+    }
+    
+    .categories__titres {
+        justify-content: center;
+        width: 100%;
+
     }
 
     .categories__titres:hover {
