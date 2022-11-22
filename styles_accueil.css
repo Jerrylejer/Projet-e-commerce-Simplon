@@ -223,10 +223,6 @@ button {
     justify-content: center;
 }
 
-.decouverte__image-accueil img {
-    width: min();
-}
-
 .image__responsive {
     display: none;
 }
@@ -236,6 +232,18 @@ button {
     height: 856px;
     width: 152px;
     background: url(/assets/photos/background_colonnes.png);
+}
+
+.decouverte__colonne-droite {
+    position:relative;
+    top:0px;
+    left: -2px;
+}
+
+.decouverte__colonne-gauche {
+    position:relative;
+    top:0px;
+    right: -2px;
 }
 
 /*? SECTION UNIVERS */
@@ -271,20 +279,20 @@ button {
     padding: 15px 0px;
     font-size: large;
     padding-bottom: 10px;
-    border-bottom: 3px solid white;
+    border-bottom: 10px solid white;
 }
 
 .univers__cards-titre:hover {
     cursor: pointer;
     transition: 1s;
-    border-bottom: 3px solid black;
+    border-bottom: 10px solid var(--color-purple);
 }
 
 /*? SECTIONS NOUVEAUTES */
 .nouveautes {
     height: auto;
     position: relative;
-    top: -150px;
+    top: -100px;
 }
 
 .nouveautes h2 {
@@ -424,6 +432,7 @@ button {
     
     .decouverte__image-accueil :nth-child(2) {
         display: block;
+        min-width: 390px;
         margin-top: 30px;
     }
 
@@ -433,6 +442,7 @@ button {
 
     .nouveautes {
         align-items: center;
+        margin-top: 0px;
     }
 
     .nouveautes__container {
@@ -445,7 +455,7 @@ button {
 @media screen and (max-width: 768px) {
 
     .univers {
-        margin-top: -300px;
+        margin-top: -100px;
     }
 
     .univers__card {
@@ -512,6 +522,6 @@ button {
     }
 
     .univers {
-        margin-top: -400px;
+        margin-top: -300px;
     }
 }
