@@ -65,6 +65,10 @@ button {
     align-items: center;
 }
 
+.flex-straight {
+    display: flex;
+}
+
 .column {
     flex-direction: column;
 }
@@ -424,8 +428,20 @@ button {
         margin-top: -1100px;
     }
 
+    /* .categories__titres {
+        justify-content: center;
+    } */
+
     .categories__titres {
         justify-content: center;
+        width: 100%;
+    }
+
+    .categories__titres:hover {
+        cursor: pointer;
+        transition: 1s;
+        border-bottom: 10px solid var(--color-purple);
+        width: 100%;
     }
 
     .categorie__accessoires,
@@ -523,19 +539,6 @@ button {
     .accessoires {
         width: 100%;
         justify-content: center;
-    }
-    
-    .categories__titres {
-        justify-content: center;
-        width: 100%;
-
-    }
-
-    .categories__titres:hover {
-        cursor: pointer;
-        transition: 1s;
-        border-bottom: 10px solid var(--color-purple);
-        width: 100%;
     }
 
     .newsletter {
