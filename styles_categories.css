@@ -505,7 +505,7 @@ button {
     .categories__titres:hover {
         cursor: pointer;
         transition: 1s;
-        border-bottom: 10px solid rgb(251, 2, 226);
+        border-bottom: 10px solid var(--color-purple);
         width: 100%;
     }
 
