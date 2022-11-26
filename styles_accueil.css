@@ -200,13 +200,13 @@ button {
 /** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
 /* Navigation apparait au clic */
 .open {
-    transition: 2s;
+    transition: 1s;
     left: 0px;
 }
 
 /* Navigation cachée à gauche */
 .close {
-    transition: 3s;
+    transition: 2s;
     left: -2880px;
 }
 
@@ -418,8 +418,26 @@ button {
         text-align: center;
     }
 
+    .nav__list h2 {
+        margin-bottom: 8px;
+    }
+
+    .nav__list {
+        min-height: 60px;
+        min-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .nav__list ul li a {
+        font-size:smaller;
+    }
+
+    .responsive-off {
+        display: none;
+    }
+    
     .decouverte {
-        margin-top: -1120px;
+        margin-top: -200px;
     }
     
     .titres__sections {
@@ -437,12 +455,12 @@ button {
     }
 
     .univers {
-        margin-top: -50px;
+        margin-top: 0px;
     }
 
     .nouveautes {
         align-items: center;
-        margin-top: 0px;
+        margin-top: -100px;
     }
 
     .nouveautes__container {
@@ -518,10 +536,10 @@ button {
     }
 
     .decouverte {
-        margin-top: -1080px;
+        margin-top: -180px;
     }
 
     .univers {
-        margin-top: -300px;
+        margin-top: -180px;
     }
 }
