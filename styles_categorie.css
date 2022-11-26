@@ -190,7 +190,7 @@ button {
     justify-content: space-around;
     padding: 21px;
     background: var(--color-white);
-    opacity: 0.9;
+    opacity: 0.95;
     width: min(100%, 100%);
     position: relative;
     top: 0px;
@@ -209,13 +209,13 @@ button {
 /** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
 /* Navigation apparait au clic */
 .open {
-    transition: 2s;
+    transition: 1s;
     left: 0px;
 }
 
 /* Navigation cachée à gauche */
 .close {
-    transition: 3s;
+    transition: 2s;
     left: -2880px;
 }
 
@@ -234,88 +234,108 @@ button {
 }
 
 .categories__container {
+    margin-top: 68px;
     justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
 }
 
 .categories__titres {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    font-size: larger;
-    padding-bottom: 10px;
-    border-bottom: 10px solid white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.categories__titres h3 {
+    font-weight: lighter;
+    color: var(--color-white);
 }
 
 .categories__titres:hover {
     cursor: pointer;
-    transition: 1s;
-    border-bottom: 10px solid var(--color-purple);
-    width: 50%;
 }
 
-.extra:hover {
-    width: 70%;
+.bas {
+    margin-top: 20px;
 }
 
-.categories__femmes-tous > img {
-    max-width: 500px;
+.relative {
+    position: relative;
 }
 
-.categories__autres {
-    gap: 100px;
-    height: 100%;
+.inside {
+    position: absolute;
+    top: 250px;
+    left: 35px;
+}
+
+.categories__femmes-total > img {
+    width: 626px;
+    height: 951px;
+}
+
+.categories__femmes-combinaisons > img {
+    width: 626px;
+    height: 319px;
+    object-fit: cover;
+}
+
+.categories__femmes-gauche {
+    justify-content: center;
+}
+
+.categorie__chaussures img {
+    width: 313px;
+    height: 464px;
+}
+
+.categorie__robes-jupes img {
+    width: 313px;
+    height: 464px;
+}
+
+.categorie__accessoires img {
+    width: 626px;
+    height: 341px;
+}
+
+.categorie__hauts-et-teeshirts img {
+    width: 313px;
+    height: 464px;
+}
+
+.categorie__pantalons img {
+    width: 313px;
+    height: 464px;
+}
+
+.categories__femmes-droite-haut {
+    /* gap: 100px; */
+    /* height: 100%; */
     justify-content: space-between;
 }
 
 .categories__femmes {
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
-.categorie__hauts > img {
-    max-width: 306px;
+.categorie__colonne-violette-bas {
+    width: min(100%);
+    height: min(80px);
+    background: var(--color-purple);
+    position: relative;
+    top: -57px;
+    z-index: -1;
 }
 
-.categorie__combinaisons > img {
-    max-width: 470px;
-}
-
-.categorie__colonne-violette {
-    width: min(940px);
-    height: min(135px);
+.categorie__colonne-violette-haut {
+    width: min(100%);
+    height: min(80px);
     background: var(--color-purple);
     position: absolute;
-    top: 0px;
-    left: -100px;
-}
-
-.categorie__accessoires {
-    position: absolute;
-    top: 1050px;
-    left: 450px;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.categorie__accessoires > img {
-    max-width: 424px;
-    z-index: 1;
-}
-
-.categorie__accessoires-gauche,
-.categorie__accessoires-droite {
-    z-index: 1;
-    position: relative;
-    top: 50px;
+    top: 79px;
     left: 0px;
-}
-
-.gauche,
-.droite {
-    margin-top: 15px;
+    z-index: -1;
 }
 
 /*? NEWSLETTER */
@@ -323,7 +343,7 @@ button {
     height: auto;
     align-items: center;
     margin-bottom: 154px;
-    margin-top: 300px;
+    margin-top: -200px;
 }
 
 .newsletter h2 {
@@ -391,22 +411,57 @@ button {
 
 /*? MEDIAQUERIES */
 
-@media screen and (max-width: 1369px) {
-    .categorie__colonne-violette {
+@media screen and (max-width: 1310px) {
+
+    .categories__container {
+        margin-top: 0px;
+    }
+    
+    .categorie__colonne-violette-haut,
+    .categorie__colonne-violette-bas {
         display: none;
     }
 
-    .categories__femmes-tous {
+    .categories__titres {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .categories__titres h3 {
+        font-weight: lighter;
+        color: var(--color-black);
+    }
+
+    .categories__titres {
+        cursor: pointer;
+        transition: 1s;
+        border-bottom: 10px solid transparent;
+        width: 100%;
+    }
+
+    .categories__titres:hover {
+        cursor: pointer;
+        transition: 1s;
+        border-bottom: 10px solid var(--color-purple);
+        width: 100%;
+    }
+
+    .inside h3 {
+        color: white;
+        position: absolute;
+        left: 15px;
+ 
+    }
+    .inside:hover {
+        width: 50%;
+    }
+
+    .categories__femmes-total {
+        margin-bottom: 60px;
+    }
+
+    .categories__femmes-gauche {
         margin-bottom: 90px;
-    }
-
-    .categorie__accessoires {
-        position: unset;
-    }
-
-    .categorie__accessoires-gauche,
-    .categorie__accessoires-droite {
-        position: unset;
     }
 
     .newsletter {
@@ -420,28 +475,30 @@ button {
         text-align: center;
     }
 
+    .nav__list h2 {
+        margin-bottom: 8px;
+    }
+
+    .nav__list {
+        min-height: 60px;
+        min-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .nav__list ul li a {
+        font-size:smaller;
+    }
+
+    .responsive-off {
+        display: none;
+    }
+
     .titres__sections {
         text-align: center;
     }
 
     .categories {
-        margin-top: -1100px;
-    }
-
-    /* .categories__titres {
-        justify-content: center;
-    } */
-
-    .categories__titres {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .categories__titres:hover {
-        cursor: pointer;
-        transition: 1s;
-        border-bottom: 10px solid var(--color-purple);
-        width: 100%;
+        margin-top: -100px;
     }
 
     .categorie__accessoires,
@@ -450,24 +507,13 @@ button {
         align-items: center;
     }
 
-    .categories__femmes-tous {
-        margin-bottom: 90px;
-    }
-
-    .categories__femmes {
-        gap: 90px;
-    }
-
-    .categorie__accessoires {
-        gap: 90px;
-    }
-    
     .newsletter {
-        margin-top: -100px;
+        margin-top: -150px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    /* Header & menu */
     .header__navigation {
         flex-direction: column;
         height: auto;
@@ -506,44 +552,9 @@ button {
         padding: 5px;
     }
 
-    .categories h2 {
-        text-align: center;
-    }
-
-    .categories {
+    /* .categories {
         margin-top: -1100px;
-    }
-
-    .categories__container {
-        gap: 80px;
-    }
-
-    .categories__autres {
-        gap: 80px;
-    }
-
-    
-    .categorie__hauts > img {
-        margin: 0px;
-    }
-    
-    .categorie__combinaisons > img {
-        margin: 0px;
-    }
-    
-    .categorie__accessoires {
-        margin: 0px;
-        justify-content: center;
-    }
-    
-    .accessoires {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .newsletter {
-        margin-top: -50px;
-    }
+    } */
 
     .footer {
         height: auto;
@@ -556,6 +567,7 @@ button {
 }
 
 @media screen and (max-width: 570px) {
+    /* Header & menu */
     .header__navigation {
         flex-direction: column;
         height: auto;
@@ -594,11 +606,53 @@ button {
         padding: 5px;
     }
 
-    .categories {
+    /* Catégories */
+
+    /* .categories {
         margin-top: -1100px;
+    } */
+
+    .categories__femmes-total > img {
+        max-width: 313px;
+        object-fit:cover;
+        margin: 0 auto;
+    }
+    
+    .categories__femmes-combinaisons > img {
+        width: 426px;
+        height:fit-content;
+        object-fit: cover;
+    }
+
+    .categorie__accessoires > img {
+        width: 426px;
+        height: fit-content;
+        object-fit:cover;
+    }
+
+    .categorie__accessoires {
+        margin: 60px 0;
+    }
+    
+    .categories__femmes-droite-haut {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .categories__femmes-droite-bas {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .inside h3 {
+        color: white;
+        position: absolute;
+        top: -70px;
+        left: -10px;
+ 
     }
 
     .newsletter {
-        margin-top: -50px;
+        margin-top: -150px;
     }
 }

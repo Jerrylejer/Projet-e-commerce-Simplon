@@ -69,29 +69,29 @@
                 <h2><a href="#">Articles</a></h2>
                 <ul class="nav__nouveautes">
                     <li><a href="#">Catégories principales</a></li>
-                    <li><a href="#">Nouveauté</a></li>
-                    <li><a href="#">Meilleures ventes</a></li>
-                    <li><a href="#">Idées cadeaux</a></li>
+                    <li class="responsive-off"><a href="#">Nouveauté</a></li>
+                    <li class="responsive-off"><a href="#">Meilleures ventes</a></li>
+                    <li class="responsive-off"><a href="#">Idées cadeaux</a></li>
                 </ul>
             </div>
             <div class="hommes nav__list">
                 <h2><a href="#">Hommes</a></h2>
                 <ul class="nav__hommes">
                     <li><a href="#">Tous les vêtements</a></li>
-                    <li><a href="#">Hauts et tee-shirts</a></li>
-                    <li><a href="#">Bas et pantalons</a></li>
-                    <li><a href="#">Combinaisons</a></li>
-                    <li><a href="#">Chaussures</a></li>
+                    <li class="responsive-off"><a href="#">Hauts et tee-shirts</a></li>
+                    <li class="responsive-off"><a href="#">Bas et pantalons</a></li>
+                    <li class="responsive-off"><a href="#">Combinaisons</a></li>
+                    <li class="responsive-off"><a href="#">Chaussures</a></li>
                 </ul>
             </div>
             <div class="femmes nav__list">
                 <h2><a href="#">Femmes</a></h2>
                 <ul class="nav__femmes">
                     <li><a href="#">Tous les vêtements</a></li>
-                    <li><a href="#">Hauts et tee-shirts</a></li>
-                    <li><a href="#">Bas et pantalons</a></li>
-                    <li><a href="#">Combinaisons</a></li>
-                    <li><a href="#">Chaussures</a></li>
+                    <li class="responsive-off"><a href="#">Hauts et tee-shirts</a></li>
+                    <li class="responsive-off"><a href="#">Bas et pantalons</a></li>
+                    <li class="responsive-off"><a href="#">Combinaisons</a></li>
+                    <li class="responsive-off"><a href="#">Chaussures</a></li>
                 </ul>
             </div>
             <div class="accessoires nav__list">
@@ -115,86 +115,86 @@
         <main class="main">
             <section class="categories">
                 <h2 class="titres__sections">Femmes</h2>
+                <div class="categorie__colonne-violette-haut">
+                    <span class="colonne-violette"></span>
+                </div>
                 <div class="categories__container flex-straight">
-                    <div class="categories__femmes-tous">
-                        <div class="categories__titres flex">
-                            <h3>Tous les vêtements</h3>
+                    <div class="categories__femmes-gauche">
+                        <div class="categories__femmes-total">
+                            <div class="categories__titres flex">
+                                <h3>Total look</h3>
+                            </div>
                             <img
-                            class="polygons"
-                            src="/assets/icônes/polygons.png"
-                            alt="flèche droite"
+                            src="/assets/photos/categorie__gauche-haut.png"
+                            alt="total look"
                             />
                         </div>
-                        <img
-                        src="/assets/photos/categorie_gauche.png"
-                        alt="article du moment"
-                        />
+                        <div class="categories__femmes-combinaisons">
+                            <img
+                            src="/assets/photos/categorie__gauche-bas.png"
+                            alt="combinaisons"
+                            />
+                            <div class="categories__titres bas flex">
+                                <h3>Combinaisons</h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="categories__autres flex column">
-                        <div class="categories__femmes flex">
-                            <div class="categorie__hauts">
+                    <div class="categories__femmes-droite flex column">
+                        <div class="categories__femmes-droite-haut flex">
+                            <div class="categorie__chaussures">
                                 <div class="categories__titres extra flex">
-                                    <h3>Hauts & tee-shirts</h3>
-                                    <img
-                                    class="polygons"
-                                    src="/assets/icônes/polygons.png"
-                                    alt="flèche droite"
-                                    />
+                                    <h3>Chaussures</h3>
                                 </div>
                                 <img
-                                src="/assets/photos/categorie__droite1.png"
-                                alt="hommes"
+                                src="/assets/photos/categorie__droite-haut1.png"
+                                alt="chaussures"
                                 />
                             </div>
-                            <div class="categorie__combinaisons">
+                            <div class="categorie__robes-jupes">
                                 <div class="categories__titres flex">
-                                    <h3>combinaisons</h3>
-                                    <img
-                                    class="polygons"
-                                    src="/assets/icônes/polygons.png"
-                                    alt="flèche droite"
-                                    />
+                                    <h3>Robes et jupes</h3>
                                 </div>
                                 <img
                                 src="/assets/photos/categorie__droite2.png"
-                                alt="hommes"
+                                alt="robes et jupes"
                                 />
                             </div>
                         </div>
                         <div class="categorie__accessoires flex">
-                            <div class="categorie__colonne-violette">
-                                <span class="colonne-violette"></span>
-                            </div>
-                            <div class="categorie__accessoires-gauche">
+                            <div class="categorie__accessoires relative">
                                 <img
-                                src="/assets/photos/categorie__bas1.png"
-                                alt="hommes"
+                                src="/assets/photos/categorie__droite3.png"
+                                alt="accessoires"
                                 />
-                                <div class="categories__titres gauche flex">
-                                    <h3>Chaussures</h3>
-                                    <img
-                                    class="polygons"
-                                    src="/assets/icônes/polygons.png"
-                                    alt="flèche droite"
-                                    />
+                                <div class="categories__titres inside flex">
+                                    <h3>Casques et masques</h3>
                                 </div>
                             </div>
-                            <div class="categorie__accessoires-droite">
+                        </div>
+                        <div class="categories__femmes-droite-bas flex">
+                            <div class="categorie__hauts-et-teeshirts">
                                 <img
-                                src="/assets/photos/categorie__bas2.png"
-                                alt="hommes"
+                                src="/assets/photos/categorie__droite4.png"
+                                alt="hauts et tee-shirts"
                                 />
-                                <div class="categories__titres droite flex">
-                                    <h3>Robes & jupes</h3>
-                                    <img
-                                    class="polygons"
-                                    src="/assets/icônes/polygons.png"
-                                    alt="flèche droite"
-                                    />
+                                <div class="categories__titres extra bas flex">
+                                    <h3>Hauts et tee-shirts</h3>
+                                </div>
+                            </div>
+                            <div class="categorie__pantalons">
+                                <img
+                                src="/assets/photos/categorie__droite5.png"
+                                alt="pantalons"
+                                />
+                                <div class="categories__titres bas flex">
+                                    <h3>Pantalons</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="categorie__colonne-violette-bas">
+                    <span class="colonne-violette"></span>
                 </div>
             </section>
             <section class="newsletter flex column">
