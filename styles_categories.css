@@ -55,7 +55,7 @@ button {
 }
 
 .polygons {
-    width: 10px;
+    width: 7px;
 }
 
 /*? PROPRIETES BOX*/
@@ -205,13 +205,13 @@ button {
 /** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
 /* Navigation apparait au clic */
 .open {
-    transition: 2s;
+    transition: 1s;
     left: 0px;
 }
 
 /* Navigation cachée à gauche */
 .close {
-    transition: 3s;
+    transition: 2s;
     left: -2880px;
 }
 
@@ -230,7 +230,8 @@ button {
 
 .categories__container {
     justify-content: center;
-    gap: 209px;
+    align-items: flex-start;
+    gap: 1px;
     flex-wrap: wrap;
 }
 
@@ -250,37 +251,54 @@ button {
     width: 50%;
 }
 
-.categories__moment > img {
-    max-width: 500px;
-}
-
 .categories__autres {
-    gap: 100px;
-    height: 100%;
+    gap: 1px;
     justify-content: space-between;
 }
 
 .categories__sexes {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 1px;
+}
+
+.categories__moment > img {
+    width: 525px;
+    height: 1035px;
 }
 
 .categorie__hommes > img {
-    max-width: 300px;
+    width: 253px;
+    height: 413px;
 }
 
 .categorie__femmes > img {
-    max-width: 380px;
+    width: 253px;
+    height: 413px;
 }
 
 .categorie__accessoires > img {
-    max-width: 300px;
+    width: 506px;
+    height: 621px;
 }
 
 .categorie__accessoires {
-    gap: 30px;
+    align-items: flex-END;
     flex-wrap: wrap;
+}
+
+.categories__titre-accessoires {
+    gap: 10px;
+    font-size:larger;
+    padding-top: 10px;
+    border-top: 10px solid white;
+}
+
+.categories__titre-accessoires:hover {
+    cursor: pointer;
+    transition: 1s;
+    border-top: 10px solid var(--color-purple);
+    width: 29.5%;
 }
 
 /*? SECTIONS NOUVEAUTES */
@@ -393,11 +411,28 @@ button {
     }
 }
 
+@media screen and (max-width: 1074px) {
+
+    .categories__container {
+        gap: 80px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     
     .nav__desktop {
         flex-direction: column;
         text-align: center;
+    }
+
+    .nav__list h2 {
+        margin-bottom: 8px;
+    }
+
+    .nav__list {
+        min-height:60px;
+        min-width: 150px;
+        margin-bottom: 10px;
     }
     
     .titres__sections {
@@ -405,7 +440,7 @@ button {
     }
 
     .categories {
-        margin-top: -1100px;
+        margin-top: -500px;
     }
 
     .nouveautes {
@@ -469,11 +504,7 @@ button {
     }
 
     .categories {
-        margin-top: -1100px;
-    }
-
-    .categories__container {
-        gap: 80px;
+        margin-top: -400px;
     }
 
     .categories__autres {
@@ -564,7 +595,27 @@ button {
     }
 
     .categories {
-        margin-top: -1100px;
+        margin-top: -400px;
+    }
+
+    .categories__moment > img {
+        width:254px;
+        height:453px;
+    }
+
+    .categories__sexes {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 75px;
+    }
+
+    .categorie__accessoires {
+        align-items: center;
+    }
+
+    .categorie__accessoires > img {
+        width:250px;
+        height: 313px;
     }
 
     .newsletter {
