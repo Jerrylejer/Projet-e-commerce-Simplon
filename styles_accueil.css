@@ -344,6 +344,12 @@ button {
     }
 }
 
+.carrousel1,
+.carrousel2,
+.carrousel3 {
+    gap: 120px;
+}
+
 .fa-chevron-right,
 .fa-chevron-left {
     font-size: 3rem;
@@ -446,6 +452,12 @@ button {
 
     .nouveautes__container {
         padding: 40px 40px;
+    }
+    
+    .carrousel1,
+    .carrousel2,
+    .carrousel3 {
+        gap: 20px;
     }
 }
 
