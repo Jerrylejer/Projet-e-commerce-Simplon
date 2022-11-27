@@ -11,6 +11,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles_accueil.css" />
+        <script src="https://kit.fontawesome.com/29c57d1b0e.js" crossorigin="anonymous"></script>
         <title>Projet e-commerce Simplon</title>
     </head>
     <body>
@@ -69,28 +70,40 @@
             <div class="articles-du-moment nav__list">
                 <h2><a href="#">Articles</a></h2>
                 <ul class="nav__nouveautes">
-                    <li><a href="#">Catégories principales</a></li>
+                    <li><a href="/categories.html">Catégories principales</a></li>
                     <li class="responsive-off"><a href="#">Nouveauté</a></li>
-                    <li class="responsive-off"><a href="#">Meilleures ventes</a></li>
-                    <li class="responsive-off"><a href="#">Idées cadeaux</a></li>
+                    <li class="responsive-off">
+                        <a href="#">Meilleures ventes</a>
+                    </li>
+                    <li class="responsive-off">
+                        <a href="#">Idées cadeaux</a>
+                    </li>
                 </ul>
             </div>
             <div class="hommes nav__list">
                 <h2><a href="#">Hommes</a></h2>
                 <ul class="nav__hommes">
                     <li><a href="#">Tous les vêtements</a></li>
-                    <li class="responsive-off"><a href="#">Hauts et tee-shirts</a></li>
-                    <li class="responsive-off"><a href="#">Bas et pantalons</a></li>
+                    <li class="responsive-off">
+                        <a href="#">Hauts et tee-shirts</a>
+                    </li>
+                    <li class="responsive-off">
+                        <a href="#">Bas et pantalons</a>
+                    </li>
                     <li class="responsive-off"><a href="#">Combinaisons</a></li>
                     <li class="responsive-off"><a href="#">Chaussures</a></li>
                 </ul>
             </div>
             <div class="femmes nav__list">
-                <h2><a href="#">Femmes</a></h2>
+                <h2><a href="/categorie.html">Femmes</a></h2>
                 <ul class="nav__femmes">
                     <li><a href="#">Tous les vêtements</a></li>
-                    <li class="responsive-off"><a href="#">Hauts et tee-shirts</a></li>
-                    <li class="responsive-off"><a href="#">Bas et pantalons</a></li>
+                    <li class="responsive-off">
+                        <a href="#">Hauts et tee-shirts</a>
+                    </li>
+                    <li class="responsive-off">
+                        <a href="#">Bas et pantalons</a>
+                    </li>
                     <li class="responsive-off"><a href="#">Combinaisons</a></li>
                     <li class="responsive-off"><a href="#">Chaussures</a></li>
                 </ul>
@@ -192,29 +205,95 @@
                 <h2 class="titres__sections">Nouveautés</h2>
                 <div class="container flex column">
                     <div class="nouveautes__container flex">
-                        <div class="nouveautes__items">
-                            <img
-                                src="/assets/photos/carrousel1.png"
-                                alt="mode1"
-                            />
+                        <div class="chevron__gauche">
+                            <i class="fas fa-chevron-left" id="chevronG"></i>
                         </div>
-                        <div class="nouveautes__items">
-                            <img
-                                src="/assets/photos/carrousel2.png"
-                                alt="mode2"
-                            />
+                        <div class="off" id="carrousel1">
+                            <div class="carrousel1 flex">
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel1.png"
+                                        alt="mode1"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel2.png"
+                                        alt="mode2"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel3.png"
+                                        alt="mode3"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel4.png"
+                                        alt="mode4"
+                                    />
+                                </div>
+                            </div>
                         </div>
-                        <div class="nouveautes__items">
-                            <img
-                                src="/assets/photos/carrousel3.png"
-                                alt="mode3"
-                            />
+                        <div class="on flex" id="carrousel2">
+                            <div class="carrousel2 flex">
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel5.png"
+                                        alt="mode1"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel6.png"
+                                        alt="mode2"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel7.png"
+                                        alt="mode3"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel8.png"
+                                        alt="mode4"
+                                    />
+                                </div>
+                            </div>
                         </div>
-                        <div class="nouveautes__items">
-                            <img
-                                src="/assets/photos/carrousel4.png"
-                                alt="mode4"
-                            />
+                        <div class="off flex" id="carrousel3">
+                            <div class="carrousel3 flex">
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel9.png"
+                                        alt="mode1"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel10.png"
+                                        alt="mode2"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel11.png"
+                                        alt="mode3"
+                                    />
+                                </div>
+                                <div class="nouveautes__items">
+                                    <img
+                                        src="/assets/photos/carrousel12.png"
+                                        alt="mode4"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chevron__droit" id="chevronD">
+                            <i class="fas fa-chevron-right"></i>
                         </div>
                     </div>
                 </div>

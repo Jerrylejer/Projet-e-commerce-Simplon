@@ -194,7 +194,7 @@ button {
 }
 
 .digitalized span {
-    font-size:medium;
+    font-size: medium;
 }
 
 /** CLASS ANIMATION JS POUR LA NAVIGATION VENANT DE GAUCHE */
@@ -235,14 +235,14 @@ button {
 }
 
 .decouverte__colonne-droite {
-    position:relative;
-    top:0px;
+    position: relative;
+    top: 0px;
     left: -2px;
 }
 
 .decouverte__colonne-gauche {
-    position:relative;
-    top:0px;
+    position: relative;
+    top: 0px;
     right: -2px;
 }
 
@@ -310,6 +310,46 @@ button {
     padding: 40px 0px;
 }
 
+/** Carrousel animation au click */
+.on {
+    display: block;
+    animation-name: opacity1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation sur apparition/disparition des témoignages */
+@keyframes opacity1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.off {
+    display: none;
+    animation-name: opacity0;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes opacity0 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 /*? NEWSLETTER */
 .newsletter {
     position: relative;
@@ -361,7 +401,7 @@ button {
 
 .footer p {
     color: var(--color-white);
-    font-size:x-large;
+    font-size: x-large;
     margin: 40px 0px;
 }
 
@@ -383,7 +423,6 @@ button {
     line-height: 2rem;
 }
 
-
 /*? MEDIAQUERIES */
 
 @media screen and (max-width: 1800px) {
@@ -400,7 +439,6 @@ button {
 
     .univers {
         margin-top: -180px;
-
     }
     .nouveautes {
         margin-top: -50px;
@@ -412,7 +450,6 @@ button {
 }
 
 @media screen and (max-width: 992px) {
-    
     .nav__desktop {
         flex-direction: column;
         text-align: center;
@@ -429,17 +466,17 @@ button {
     }
 
     .nav__list ul li a {
-        font-size:smaller;
+        font-size: smaller;
     }
 
     .responsive-off {
         display: none;
     }
-    
+
     .decouverte {
         margin-top: -200px;
     }
-    
+
     .titres__sections {
         text-align: center;
     }
@@ -447,7 +484,7 @@ button {
     .decouverte__image-accueil > img {
         display: none;
     }
-    
+
     .decouverte__image-accueil :nth-child(2) {
         display: block;
         min-width: 390px;
@@ -468,10 +505,23 @@ button {
         align-items: center;
         width: 400px;
     }
+
+    .carrousel1,
+    .carrousel2,
+    .carrousel3 {
+        flex-direction: column;
+    }
+
+    .chevron__gauche i {
+        transform: rotate(90deg);
+    }
+
+    .chevron__droit i {
+        transform: rotate(90deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
-
     .univers {
         margin-top: -100px;
     }
@@ -488,12 +538,11 @@ button {
     .footer {
         height: auto;
     }
-    
+
     .reseaux__container,
     .nav__footer {
         flex-direction: column;
     }
-
 }
 
 @media screen and (max-width: 570px) {
@@ -503,7 +552,7 @@ button {
         padding: 5px;
         gap: 15px;
     }
-    
+
     .header__burger {
         margin: 30px 0px;
     }
