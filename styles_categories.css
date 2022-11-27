@@ -334,6 +334,52 @@ button {
     height: auto;
 }
 
+/** Carrousel animation au click */
+.on {
+    display: block;
+    animation-name: opacity1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation sur apparition/disparition des témoignages */
+@keyframes opacity1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.off {
+    display: none;
+    animation-name: opacity0;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes opacity0 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.carrousel1,
+.carrousel2,
+.carrousel3 {
+    gap: 120px;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 /*? NEWSLETTER */
 .newsletter {
     height: auto;
@@ -438,6 +484,12 @@ button {
     .nouveautes__container {
         padding: 40px 40px;
     }
+
+    .carrousel1,
+    .carrousel2,
+    .carrousel3 {
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 1074px) {
@@ -488,6 +540,20 @@ button {
         flex-direction: column;
         align-items: center;
         width: 400px;
+    }
+
+    .carrousel1,
+    .carrousel2,
+    .carrousel3 {
+        flex-direction: column;
+    }
+
+    .chevron__gauche i {
+        transform: rotate(90deg);
+    }
+
+    .chevron__droit i {
+        transform: rotate(90deg);
     }
 
     .newsletter {
