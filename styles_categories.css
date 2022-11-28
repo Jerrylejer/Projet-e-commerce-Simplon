@@ -152,35 +152,34 @@ button {
 /* barres hamburger en position normale */
 .visible {
     opacity: 1;
-    transition: 3.5s;
+    transition: 1s;
 }
 
 .initial1 {
     transform: translateY(0px) rotate(0deg);
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 .initial2 {
     transform: translateY(0px) rotate(0deg);
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 /* mise en place de la croix */
 .opacity {
     opacity: 0;
-    transition: 1.4s;
+    transition: 1s;
 }
 
 .rotate1 {
     transform: translateY(10px) rotate(130deg);
-    transition: 1.5s;
+    transition: 0.8s;
 }
 
 .rotate2 {
     transform: translateY(-10px) rotate(-130deg);
-    transition: 1.5s;
+    transition: 0.8s;
 }
-
 /*? NAVIGATION */
 .nav__desktop {
     justify-content: space-around;
@@ -306,7 +305,6 @@ button {
     width: 26.2%;
 }
 
-
 /*? SECTIONS NOUVEAUTES */
 .nouveautes {
     height: auto;
@@ -327,11 +325,6 @@ button {
     justify-content: space-around;
     gap: 20px;
     padding: 40px 0px;
-}
-
-.nouveautes__items {
-    width: 180px;
-    height: auto;
 }
 
 /** Carrousel animation au click */
