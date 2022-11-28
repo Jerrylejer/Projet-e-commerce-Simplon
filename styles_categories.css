@@ -531,7 +531,7 @@ button {
     }
 
     .nav__list {
-        min-height: 60px;
+        min-height: 100px;
         min-width: 150px;
         margin-bottom: 10px;
     }
@@ -549,7 +549,7 @@ button {
     }
 
     .categories {
-        margin-top: -80px;
+        margin-top: -300px;
     }
 
     .nouveautes {
@@ -626,9 +626,9 @@ button {
         text-align: center;
     }
 
-    .categories {
-        margin-top: -120px;
-    }
+    /* .categories {
+        margin-top: -200px;
+    } */
 
     .categories__autres {
         gap: 80px;
@@ -715,10 +715,6 @@ button {
 
     .icons__container a img {
         padding: 5px;
-    }
-
-    .categories {
-        margin-top: -110px;
     }
 
     .categories__moment h3 {
