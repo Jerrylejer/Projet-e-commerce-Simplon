@@ -237,6 +237,7 @@ button {
     margin-top: 68px;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
 .categories__titres {
@@ -270,16 +271,26 @@ button {
 .categories__femmes-total > img {
     width: 626px;
     height: 951px;
+    margin-top: -1px;
 }
 
 .categories__femmes-combinaisons > img {
     width: 626px;
-    height: 319px;
+    height: 324px;
     object-fit: cover;
 }
 
 .categories__femmes-gauche {
     justify-content: center;
+    gap: 8px;
+}
+
+.categories__femmes-droite {
+    gap: 8px;
+}
+
+.categories__femmes-droite-bas {
+    gap: 8px;
 }
 
 .categorie__chaussures img {
@@ -308,15 +319,13 @@ button {
 }
 
 .categories__femmes-droite-haut {
-    /* gap: 100px; */
-    /* height: 100%; */
+    gap: 8px;
     justify-content: space-between;
 }
 
 .categories__femmes {
     align-items: flex-start;
     flex-wrap: wrap;
-    /* gap: 30px; */
 }
 
 .categorie__colonne-violette-bas {
@@ -480,7 +489,7 @@ button {
     }
 
     .nav__list {
-        min-height: 60px;
+        min-height: 100px;
         min-width: 150px;
         margin-bottom: 10px;
     }
@@ -498,7 +507,7 @@ button {
     }
 
     .categories {
-        margin-top: -100px;
+        margin-top: -300px;
     }
 
     .categorie__accessoires,
@@ -552,9 +561,6 @@ button {
         padding: 5px;
     }
 
-    /* .categories {
-        margin-top: -1100px;
-    } */
 
     .footer {
         height: auto;
@@ -605,12 +611,6 @@ button {
     .icons__container a img {
         padding: 5px;
     }
-
-    /* Catégories */
-
-    /* .categories {
-        margin-top: -1100px;
-    } */
 
     .categories__femmes-total > img {
         max-width: 313px;
