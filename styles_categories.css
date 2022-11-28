@@ -238,9 +238,11 @@ button {
 }
 
 .categories__container {
+    position: relative;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
 .categories__titres {
@@ -253,22 +255,40 @@ button {
     color: var(--color-white);
 }
 
+.categories__moment h3 {
+    position: relative;
+    top: 1015px;
+    left: 20px;
+    color: white;
+    border-bottom: 10px solid transparent;
+    z-index: 1;
+}
+
+.categories__moment h3:hover {
+    cursor: pointer;
+    transition: 1s;
+    border-bottom: 10px solid var(--color-purple);
+}
+
 .categories__titres:hover {
     cursor: pointer;
 }
 
 .categories__autres {
     justify-content: space-between;
+    gap: 8px;
 }
 
 .categories__sexes {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
 }
 
 .categories__moment > img {
     width: 525px;
-    height: 1035px;
+    height: 1042px;
+    margin-top: -10px;
 }
 
 .categorie__hommes > img {
@@ -289,19 +309,21 @@ button {
 .categorie__accessoires {
     align-items: flex-end;
     flex-wrap: wrap;
+
 }
 
 .categories__titre-accessoires {
-    gap: 10px;
     font-size:larger;
-    padding-top: 10px;
-    border-top: 10px solid white;
+    border-bottom: 10px solid transparent;
+    position: relative;
+    top: -60px;
+    right: 40px;
 }
 
 .categories__titre-accessoires:hover {
     cursor: pointer;
     transition: 1s;
-    border-top: 10px solid var(--color-purple);
+    border-bottom: 10px solid var(--color-purple);
     width: 26.2%;
 }
 
@@ -454,6 +476,11 @@ button {
     .categories__titres h3 {
         font-weight: bolder;
         color: var(--color-black);
+    }
+
+    .categories__moment h3 {
+        font-weight: lighter;
+        color: var(--color-white);
     }
 
     .categories__titres {
@@ -694,6 +721,14 @@ button {
         margin-top: -110px;
     }
 
+    .categories__moment h3 {
+        font-weight: lighter;
+        color: var(--color-white);
+        position: relative;
+        top: 450px;
+        left: 0px;
+    }
+
     .categories__moment > img {
         width:254px;
         height:453px;
@@ -707,6 +742,10 @@ button {
 
     .categorie__accessoires {
         align-items: center;
+    }
+
+    .categories__titre-accessoires:hover {
+        width: 100%;
     }
 
     .categorie__accessoires > img {
