@@ -311,6 +311,10 @@ button {
     padding: 40px 0px;
 }
 
+.carrousel__responsive {
+    display: none;
+}
+
 /** Carrousel animation au click */
 .on {
     display: block;
@@ -519,14 +523,31 @@ button {
         width: 400px;
     }
 
-    .carrousel1,
-    .carrousel2,
-    .carrousel3 {
-        flex-direction: column;
+    .carrousel__desktop {
+        display: none;
+    }
+
+    .carrousel__responsive {
+        display: block;
+    }
+
+    .carrousel {
+        justify-content: center;
+    }
+
+    .chevron__gauche {
+        text-align: center;
+        margin: 10px;
     }
 
     .chevron__gauche i {
         transform: rotate(90deg);
+        text-align: center;
+    }
+
+    .chevron__droit {
+        text-align: center;
+        margin: 10px;
     }
 
     .chevron__droit i {
