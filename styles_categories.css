@@ -258,7 +258,7 @@ button {
 
 .categories__moment h3 {
     position: relative;
-    top: 1015px;
+    top: 1835px;
     left: 20px;
     color: white;
     border-bottom: 10px solid transparent;
@@ -287,24 +287,28 @@ button {
 }
 
 .categories__moment > img {
-    width: 525px;
-    height: 1042px;
-    margin-top: -10px;
+    /* width: 525px; */
+    /* height: 1042px; */
+    height: 1860px;
+    margin-top: -8px;
 }
 
 .categorie__hommes > img {
-    width: 253px;
-    height: 413px;
+    /* width: 253px; */
+    /* height: 413px; */
+    width: 453px;
 }
 
 .categorie__femmes > img {
-    width: 253px;
-    height: 413px;
+    /* width: 253px; */
+    /* height: 413px; */
+    width: 453px;
 }
 
 .categorie__accessoires > img {
-    width: 506px;
-    height: 621px;
+    /* width: 506px;
+    height: 621px; */
+    width: 906px;
 }
 
 .categorie__accessoires {
@@ -325,7 +329,6 @@ button {
     cursor: pointer;
     transition: 1s;
     border-bottom: 10px solid var(--color-purple);
-    width: 26.2%;
 }
 
 /*? SECTIONS NOUVEAUTES */
@@ -471,6 +474,37 @@ button {
 }
 
 /*? MEDIAQUERIES */
+
+@media screen and (max-width: 1907px) {
+    .categories__moment > img {
+        width: 525px;
+        height: 1042px;
+    }
+    
+    .categorie__hommes > img {
+        width: 253px;
+        height: 413px;
+
+    }
+    
+    .categorie__femmes > img {
+        width: 253px;
+        height: 413px;
+
+    }
+    
+    .categorie__accessoires > img {
+        width: 506px;
+        height: 621px;
+    }
+
+    .categories__moment h3 {
+        position: relative;
+        top: 1020px;
+        left: 20px;
+    }
+
+}
 
 @media screen and (max-width: 1250px) {
 
