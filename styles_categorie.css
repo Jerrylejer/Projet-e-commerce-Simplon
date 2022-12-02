@@ -265,20 +265,8 @@ button {
 
 .inside {
     position: absolute;
-    top: 250px;
-    left: 35px;
-}
-
-.categories__femmes-total > img {
-    width: 626px;
-    height: 951px;
-    margin-top: -1px;
-}
-
-.categories__femmes-combinaisons > img {
-    width: 626px;
-    height: 324px;
-    object-fit: cover;
+    top: 370px;
+    left: 55px;
 }
 
 .categories__femmes-gauche {
@@ -287,41 +275,63 @@ button {
 }
 
 .categories__femmes-droite {
+    justify-content: center;
     gap: 8px;
+}
+
+.categories__femmes-droite-haut {
+    gap: 8px;
+    justify-content: space-between;
 }
 
 .categories__femmes-droite-bas {
     gap: 8px;
 }
 
+/* IMAGES */
+.categories__femmes-total > img {
+    /* width: 626px;
+    height: 951px; */
+    height: 1360px;
+    /* margin-top: 0px; */
+}
+
+.categories__femmes-combinaisons > img {
+    /* width: 626px;
+    height: 324px; */
+    width: 895px;
+    height: 352px;
+    object-fit: cover;
+}
+
 .categorie__chaussures img {
-    width: 313px;
-    height: 464px;
+    /* width: 313px;
+    height: 464px; */
+    width: 425px;
 }
 
 .categorie__robes-jupes img {
-    width: 313px;
-    height: 464px;
+    /* width: 313px;
+    height: 464px; */
+    width: 430px;
 }
 
 .categorie__accessoires img {
-    width: 626px;
-    height: 341px;
+    /* width: 626px;
+    height: 341px; */
+    width: 863px;
 }
 
 .categorie__hauts-et-teeshirts img {
-    width: 313px;
-    height: 464px;
+    /* width: 313px;
+    height: 464px; */
+    width: 428px;
 }
 
 .categorie__pantalons img {
-    width: 313px;
-    height: 464px;
-}
-
-.categories__femmes-droite-haut {
-    gap: 8px;
-    justify-content: space-between;
+    /* width: 313px;
+    height: 464px; */
+    width: 424px;
 }
 
 .categories__femmes {
@@ -421,12 +431,57 @@ button {
 
 /*? MEDIAQUERIES */
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1830px) {
+    /* IMAGES */
+    .categories__femmes-total > img {
+        width: 626px;
+        height: 951px;
+        margin-top: 0px;
+    }
 
+    .categories__femmes-combinaisons > img {
+        width: 626px;
+        height: 324px;
+        object-fit: cover;
+    }
+
+    .categorie__chaussures img {
+        width: 313px;
+        height: 464px;
+    }
+
+    .categorie__robes-jupes img {
+        width: 313px;
+        height: 464px;
+    }
+
+    .categorie__accessoires img {
+        width: 626px;
+        height: 341px;
+    }
+
+    .categorie__hauts-et-teeshirts img {
+        width: 313px;
+        height: 464px;
+    }
+
+    .categorie__pantalons img {
+        width: 313px;
+        height: 464px;
+    }
+
+    .inside {
+        position: absolute;
+        top: 280px;
+        left: 35px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
     .categories__container {
         margin-top: 0px;
     }
-    
+
     .categorie__colonne-violette-haut,
     .categorie__colonne-violette-bas {
         display: none;
@@ -460,7 +515,6 @@ button {
         color: white;
         position: absolute;
         left: 15px;
- 
     }
     .inside:hover {
         width: 50%;
@@ -496,7 +550,7 @@ button {
     }
 
     .nav__list ul li a {
-        font-size:smaller;
+        font-size: smaller;
     }
 
     .responsive-off {
@@ -562,7 +616,6 @@ button {
         padding: 5px;
     }
 
-
     .footer {
         height: auto;
     }
@@ -619,26 +672,26 @@ button {
 
     .categories__femmes-total > img {
         max-width: 313px;
-        object-fit:cover;
+        object-fit: cover;
         margin: 0 auto;
     }
-    
+
     .categories__femmes-combinaisons > img {
         width: 426px;
-        height:fit-content;
+        height: fit-content;
         object-fit: cover;
     }
 
     .categorie__accessoires > img {
         width: 426px;
         height: fit-content;
-        object-fit:cover;
+        object-fit: cover;
     }
 
     .categorie__accessoires {
         margin: 60px 0;
     }
-    
+
     .categories__femmes-droite-haut {
         flex-direction: column;
         gap: 60px;
@@ -654,7 +707,6 @@ button {
         position: absolute;
         top: -70px;
         left: -10px;
- 
     }
 
     .newsletter {
