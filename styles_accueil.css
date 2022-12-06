@@ -114,7 +114,7 @@ button {
 }
 
 .header__icons-client {
-    min-width: 400px;
+    min-width: 600px;
     justify-content: space-around;
     gap: 40px;
 }
@@ -220,8 +220,8 @@ button {
     height: 100vh;
     width: min(100%, 90%);
     position: relative;
-    top: -240px;
-    margin: 0 auto;
+    top: -440px;
+    margin: 0 auto 270px;
 }
 
 .decouverte__container {
@@ -233,6 +233,7 @@ button {
 }
 
 .decouverte__image-accueil {
+    margin-top: 235px;
     width: 100%;
 }
 
@@ -254,6 +255,7 @@ button {
 
 .legende button {
     font-size: 1rem;
+    font-family: 'Nunito';
     padding: 20px;
     margin-left: 20px;
     border-radius: 50px;
@@ -273,20 +275,20 @@ button {
 
 .decouverte__colonne-gauche {
     position: relative;
-    top: -65px;
+    top: 50px;
     left: 200px;
 }
 
 .decouverte__colonne-droite {
     position: relative;
-    top: -65px;
+    top: 50px;
     right: 200px;
 }
 
 /*? SECTION UNIVERS */
 .univers {
     height: auto;
-    margin-top: -50px;
+    margin-top: -40px;
     padding: 21px;
 }
 
@@ -405,6 +407,7 @@ button {
 
 .newsletter h2 {
     font-size: 3rem;
+    font-family: 'Nunito';
     margin-bottom: 4rem;
     padding-left: 21px;
     text-align: center;
@@ -500,7 +503,7 @@ button {
     }
 
     .univers {
-        margin-top: -360px;
+        margin-top: -400px;
     }
 }
 @media screen and (max-width: 1600px) {
@@ -515,6 +518,12 @@ button {
     }
 }
 
+@media screen and (max-width: 1500px) {
+    .univers {
+        margin-top: -540px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .decouverte__colonne-gauche,
     .decouverte__colonne-droite {
@@ -523,9 +532,10 @@ button {
     }
 
     .univers {
-        margin-top: -550px;
+        margin-top: -600px;
     }
 }
+
 @media screen and (max-width: 1300px) {
     .decouverte__colonne-gauche,
     .decouverte__colonne-droite {
@@ -566,7 +576,7 @@ button {
 @media screen and (max-width: 1150px) {
 
     .univers {
-        margin-top: -650px;
+        margin-top: -600px;
     }
 }
 
@@ -629,9 +639,11 @@ button {
     }
 
     .nouveautes__container {
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;
+        align-items:flex-start;
+        max-width: 400px;
     }
 
     .carrousel__desktop {
@@ -662,7 +674,8 @@ button {
     }
 
     .chevron__droit i {
-        transform: rotate(90deg);
+        transform: rotate(90deg); 
+        text-align: center;
     }
 }
 
@@ -719,7 +732,7 @@ button {
      }
 
     .univers {
-        margin-top: -520px;
+        margin-top: -550px;
     }
 
     .univers__card {
